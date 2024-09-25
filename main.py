@@ -13,9 +13,9 @@ total_labs = 6
 total_quizzes = 6
 
 if labs_completed_data > total_labs:
-    total_labs = labs_completed_data
+    labs_completed_data = total_labs 
 if quizzes_completed_data > total_quizzes:
-    total_quizzes = quizzes_completed_data
+    quizzes_completed_data = total_quizzes
 
 def calculate_final_grade(
         labs_completed: int,
