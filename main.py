@@ -1,13 +1,13 @@
 labs_completed_data = int(input("Enter the number of labs completed: "))
 quizzes_completed_data = int(input("Enter the number of quizzes completed: "))
-assignment_1_grade_data = int(input("Enter the grade for Assignment 1 (%): "))
-assignment_2_grade_data = int(input("Enter the grade for Assignment 2 (%): "))
-assignment_3_grade_data = int(input("Enter the grade for Assignment 3 (%): "))
-assignment_4_grade_data = int(input("Enter the grade for Assignment 4 (%): "))
-mid_term_1_grade_data = int(input("Enter the grade for Midterm 1 (%): "))
-mid_term_2_grade_data = int(input("Enter the grade for Midterm 2 (%): "))
-final_exam_grade_data = int(input("Enter the grade for the Final Exam (%): "))
-midterms_final_prep_grade_data = int(input("Enter grade for Midterms and Final Preparation (%): "))
+assignment_1_grade_data = float(input("Enter the grade for Assignment 1 (%): "))
+assignment_2_grade_data = float(input("Enter the grade for Assignment 2 (%): "))
+assignment_3_grade_data = float(input("Enter the grade for Assignment 3 (%): "))
+assignment_4_grade_data = float(input("Enter the grade for Assignment 4 (%): "))
+mid_term_1_grade_data = float(input("Enter the grade for Midterm 1 (%): "))
+mid_term_2_grade_data = float(input("Enter the grade for Midterm 2 (%): "))
+final_exam_grade_data = float(input("Enter the grade for the Final Exam (%): "))
+midterms_final_prep_grade_data = float(input("Enter grade for Midterms and Final Preparation (%): "))
 
 total_labs = 6
 total_quizzes = 6
@@ -20,19 +20,19 @@ if quizzes_completed_data > total_quizzes:
 def calculate_final_grade(
         labs_completed: int,
         quizzes_completed: int,
-        assignment_1_grade: int,
-        assignment_2_grade: int,
-        assignment_3_grade: int,
-        assignment_4_grade: int,
-        mid_term_1_grade: int,
-        mid_term_2_grade: int,
-        final_exam_grade: int,
-        midterms_final_prep_grade: int
+        assignment_1_grade: float,
+        assignment_2_grade: float,
+        assignment_3_grade: float,
+        assignment_4_grade: float,
+        mid_term_1_grade: float,
+        mid_term_2_grade: float,
+        final_exam_grade: float,
+        midterms_final_prep_grade: float
 ) -> float:
     labs_weight = 0.2
     quizzes_weight = 0.15
     assignment_weight = 0.04
-    midterms_weight = 0.125
+    midterm_weight = 0.125
     final_exam_weight = 0.18
     midterms_final_prep_weight = 0.06
 
@@ -42,8 +42,8 @@ def calculate_final_grade(
     assignment_2_grade_weighted = assignment_2_grade * assignment_weight
     assignment_3_grade_weighted = assignment_3_grade * assignment_weight
     assignment_4_grade_weighted = assignment_4_grade * assignment_weight
-    mid_term_1_grade_weighted = mid_term_1_grade * midterms_weight
-    mid_term_2_grade_weighted = mid_term_2_grade * midterms_weight
+    mid_term_1_grade_weighted = mid_term_1_grade * midterm_weight
+    mid_term_2_grade_weighted = mid_term_2_grade * midterm_weight
     final_exam_grade_weighted = final_exam_grade * final_exam_weight
     midterms_final_prep_grade_weighted = midterms_final_prep_grade * midterms_final_prep_weight
 
