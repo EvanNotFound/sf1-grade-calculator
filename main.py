@@ -32,7 +32,7 @@ def calculate_final_grade(
     labs_weight = 0.2
     quizzes_weight = 0.15
     assignment_weight = 0.04
-    midterm_weight = 0.125
+    midterms_weight = 0.125
     final_exam_weight = 0.18
     midterms_final_prep_weight = 0.06
 
@@ -42,8 +42,8 @@ def calculate_final_grade(
     assignment_2_grade_weighted = assignment_2_grade * assignment_weight
     assignment_3_grade_weighted = assignment_3_grade * assignment_weight
     assignment_4_grade_weighted = assignment_4_grade * assignment_weight
-    mid_term_1_grade_weighted = mid_term_1_grade * midterm_weight
-    mid_term_2_grade_weighted = mid_term_2_grade * midterm_weight
+    mid_term_1_grade_weighted = mid_term_1_grade * midterms_weight
+    mid_term_2_grade_weighted = mid_term_2_grade * midterms_weight
     final_exam_grade_weighted = final_exam_grade * final_exam_weight
     midterms_final_prep_grade_weighted = midterms_final_prep_grade * midterms_final_prep_weight
 
