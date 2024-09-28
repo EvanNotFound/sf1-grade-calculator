@@ -66,4 +66,4 @@ final_grade_data = calculate_final_grade(
 
 final_grade = round(final_grade_data, 2)
 
-print(f"Your grade is: {final_grade}%")
+print(f"Your grade is: {final_grade}")
