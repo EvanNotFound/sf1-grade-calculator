@@ -1,13 +1,13 @@
 labs_completed_data = int(input("Enter the number of labs completed: "))
 quizzes_completed_data = int(input("Enter the number of quizzes completed: "))
-assignment_1_grade_data = float(input("Enter the grade for Assignment 1 (%): "))
-assignment_2_grade_data = float(input("Enter the grade for Assignment 2 (%): "))
-assignment_3_grade_data = float(input("Enter the grade for Assignment 3 (%): "))
-assignment_4_grade_data = float(input("Enter the grade for Assignment 4 (%): "))
-mid_term_1_grade_data = float(input("Enter the grade for Midterm 1 (%): "))
-mid_term_2_grade_data = float(input("Enter the grade for Midterm 2 (%): "))
-final_exam_grade_data = float(input("Enter the grade for the Final Exam (%): "))
-midterms_final_prep_grade_data = float(input("Enter grade for Midterms and Final Preparation (%): "))
+assignment_1_grade_data = float(input("Enter the grade for Assignment 1: "))
+assignment_2_grade_data = float(input("Enter the grade for Assignment 2: "))
+assignment_3_grade_data = float(input("Enter the grade for Assignment 3: "))
+assignment_4_grade_data = float(input("Enter the grade for Assignment 4: "))
+mid_term_1_grade_data = float(input("Enter the grade for Midterm 1: "))
+mid_term_2_grade_data = float(input("Enter the grade for Midterm 2: "))
+final_exam_grade_data = float(input("Enter the grade for the Final Exam: "))
+midterms_final_prep_grade_data = float(input("Enter grade for Midterms and Final Preparation: "))
 
 total_labs = 6
 total_quizzes = 6
